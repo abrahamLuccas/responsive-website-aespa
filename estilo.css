@@ -27,11 +27,12 @@ section{
     justify-content: center;
     position: relative;
     flex-direction: column;
-    padding: 1.5em;
-    margin: 2rem;
+    padding: 1.2em;
+    margin: .4em;
     margin-bottom: 2rem;
     align-items: center;
     transition: 1.9s;
+    box-shadow: 5px 5px 5px black;
 }
 
 .card_title {
@@ -49,6 +50,14 @@ img {
     justify-content: center;
     position: relative;
     border-radius: 20px;
+}
+
+.logo{
+    width: 250px;
+    height: fit-content;
+    image-rendering: auto;
+    position: relative;
+    text-align: center;
 }
 
 article{
@@ -132,10 +141,18 @@ background: transparent;
 
 @media only screen and (max-width: 768px) {
     .card_body{
-        width: 70vw;
-        
+        width: 60vw;
+        padding: 1em;
     }
 
+    .card_title{
+        padding: .5em;
+    }
+
+    .logo{
+        width: 300px;
+        height: fit-content;
+    }
     
     img{
         width: 80%;
